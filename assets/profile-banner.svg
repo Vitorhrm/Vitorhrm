@@ -1,23 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="900" height="240" role="img" aria-labelledby="title">
-  <title id="title">Vitor Matias — Backend Java, redes e automação</title>
-  <defs>
-    <linearGradient id="background" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#101c22"/>
-      <stop offset="1" stop-color="#173a36"/>
-    </linearGradient>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M24 0H0V24" fill="none" stroke="#8dd9ba" stroke-opacity=".12"/>
-    </pattern>
-  </defs>
-  <rect width="900" height="240" rx="18" fill="url(#background)"/>
-  <rect x="574" y="20" width="306" height="200" rx="12" fill="url(#grid)"/>
-  <path d="M610 164L679 118L751 159L825 101M679 118L702 63L825 101M751 159L775 198" fill="none" stroke="#70e1b1" stroke-width="2" opacity=".7"/>
-  <g fill="#b2f5d5" stroke="#19463c" stroke-width="4">
-    <circle cx="610" cy="164" r="7"/><circle cx="679" cy="118" r="11"/><circle cx="702" cy="63" r="7"/>
-    <circle cx="751" cy="159" r="10"/><circle cx="825" cy="101" r="9"/><circle cx="775" cy="198" r="6"/>
-  </g>
-  <path d="M44 54h36" stroke="#70e1b1" stroke-width="3"/>
-  <text x="91" y="59" fill="#9be5c5" font-family="monospace" font-size="16" letter-spacing="3">PORTFÓLIO TÉCNICO</text>
-  <text x="40" y="137" fill="#f4faf8" font-family="system-ui,sans-serif" font-size="62" font-weight="750">Vitor Matias</text>
-  <text x="44" y="183" fill="#c4e7da" font-family="system-ui,sans-serif" font-size="27">Backend Java · Redes e automação</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-labelledby="title">
+<title id="title">Vitor Matias — Backend Java, redes e automação</title>
+<defs><pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#91b4a0" opacity=".20"/></pattern></defs>
+<rect width="900" height="260" fill="#151c18"/><rect width="900" height="260" fill="url(#grid)"/>
+<rect x="18" y="18" width="864" height="224" fill="none" stroke="#91b4a0" opacity=".55"/>
+<text x="40" y="52" fill="#7fe5b5" font-family="monospace" font-size="16" letter-spacing="2">01 / MAPA DE ATUAÇÃO</text>
+<text x="37" y="128" fill="#f1f4eb" font-family="system-ui,sans-serif" font-size="62" font-weight="800">Vitor Matias</text>
+<text x="40" y="170" fill="#bbcec0" font-family="system-ui,sans-serif" font-size="27">Backend Java · Redes e automação</text>
+<text x="40" y="215" fill="#7fe5b5" font-family="monospace" font-size="15">VITORHRM / SISTEMAS DE INFORMAÇÃO · IFMG</text>
+<g fill="none" stroke="#7fe5b5" stroke-width="2"><path d="M676 129L619 65M676 129L775 62M676 129L820 133M676 129L760 201M676 129L594 195"/><circle cx="676" cy="129" r="25" fill="#151c18"/></g>
+<g fill="#7fe5b5"><circle cx="619" cy="65" r="6"/><circle cx="775" cy="62" r="6"/><circle cx="820" cy="133" r="6"/><circle cx="760" cy="201" r="6"/><circle cx="594" cy="195" r="6"/></g>
+<g fill="#f1f4eb" font-family="monospace" font-size="13"><text x="668" y="134">VM</text><text x="566" y="55">BACKEND</text><text x="789" y="64">REDES</text><text x="833" y="137">WEB</text><text x="772" y="207">IoT</text><text x="531" y="208">MOBILE</text></g>
 </svg>
