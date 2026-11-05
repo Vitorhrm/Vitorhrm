@@ -1,16 +1,14 @@
-## Hi there 👋
+# Vitor Matias
 
-<!--
-**Vitorhrm/Vitorhrm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Estudo Sistemas de Informação no IFMG e tenho experiência em suporte técnico e infraestrutura de telecomunicações. Meu foco atual é desenvolvimento backend com Java e Spring Boot. Também desenvolvo projetos em que posso aplicar o que aprendi trabalhando com redes e automação.
 
-Here are some ideas to get you started:
+## Projetos selecionados
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+| Projeto | O que você encontra |
+| --- | --- |
+| [Conexões SI](https://github.com/Vitorhrm/SADtrab) | Mapa interativo de disciplinas e carreiras do curso de Sistemas de Informação. [Abrir demonstração](https://vitorhrm.github.io/SADtrab/). |
+| [MAC-Fabricante](https://github.com/Vitorhrm/MAC-Fabricante) | Automação Python que identifica fabricantes por MAC/OUI em planilhas Excel, com cache local e dados fictícios. |
+| [AgroSense](https://github.com/Vitorhrm/Agrosense) | TCC em desenvolvimento sobre apoio à irrigação. Protótipo web e Android com autenticação via Supabase e dados agrícolas demonstrativos. |
+| [Mordix](https://github.com/Vitorhrm/Mordix) | Protótipo acadêmico Android em React Native e TypeScript com autenticação via Supabase. |
+
+Também mantenho um [laboratório Spring Boot com Docker](https://github.com/Vitorhrm/spring-docker-app), com instruções para compilar, executar e testar.
