@@ -1,63 +1,108 @@
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="assets/profile-banner-light.svg">
-  <img src="assets/profile-banner.svg" width="900" alt="Vitor Matias — Backend Java, redes e automação">
-</picture>
+<div align="center">
+<img src="assets/hello.gif" width="900" alt="Olá! Eu sou o Vitor. Java e Spring Boot, redes e automação, TCC e IoT em desenvolvimento.">
 
-Entre a infraestrutura e o software. Estudo Sistemas de Informação no IFMG e trago da prática em suporte e telecomunicações o interesse por entender falhas, automatizar tarefas e desenvolver sistemas que resolvem problemas reais.
+**Do suporte de redes ao desenvolvimento de software.**
 
-[**▶ Abrir demo**](https://vitorhrm.github.io/SADtrab/) · [**⌘ Ver API Java**](https://github.com/Vitorhrm/spring-docker-app) · [**↗ Explorar repositórios**](https://github.com/Vitorhrm?tab=repositories)
+Sistemas de Informação no IFMG · Java e Spring Boot · Experiência em telecomunicações
 
-## 01 / Escolha sua rota
+[![Abrir demo](assets/demo.svg)](https://vitorhrm.github.io/SADtrab/)
+[![Explorar API Java](assets/api.svg)](https://github.com/Vitorhrm/spring-docker-app)
+[![Ver projetos](assets/projects.svg)](https://github.com/Vitorhrm?tab=repositories)
 
-Abra uma rota para ver um desafio rápido. Cada projeto tem seu próprio ponto de partida.
+</div>
+
+### Um pouco do que estou construindo
+
+Trago da experiência em suporte e infraestrutura o hábito de investigar problemas e encontrar formas de automatizar o trabalho. Hoje, aprofundo meus estudos em **backend Java** e desenvolvo meu **TCC de apoio à irrigação**.
+
+<div align="center">
+<img src="assets/stats.svg" width="49%" alt="Números públicos do perfil, atualizados diariamente.">
+<img src="assets/languages.svg" width="49%" alt="Distribuição por bytes de código em cinco projetos selecionados.">
+</div>
+
+### Na minha bancada
+
+<p align="center"><img src="assets/stack.svg" width="560" alt="Java, Spring, Python, TypeScript, React, Docker, Git e Linux."></p>
+
+**Backend** · Java, Spring Boot e testes HTTP  
+**Automação e infraestrutura** · Python, Docker, Git e Linux  
+**Interfaces dos protótipos** · React, TypeScript e React Native
+
+### Escolha uma missão ↓
 
 <details open>
-<summary><strong>P-01 · BACKEND</strong> — API de chamados</summary>
+<summary><strong>☕ Backend · O chamado que tentou pular a fila</strong></summary>
 
-**Experimente** abrir um chamado e tentar resolvê-lo antes de colocá-lo em atendimento. A API responde com conflito e preserva o histórico em memória.
+Crie um chamado e tente mudar direto de OPEN para RESOLVED. A API deve responder 409. Depois percorra o fluxo OPEN → IN_PROGRESS → RESOLVED e confira o histórico.
 
-[Ver exemplos de requisição ↗](https://github.com/Vitorhrm/spring-docker-app#api-de-chamados)
+[**Abrir API de chamados →**](https://github.com/Vitorhrm/spring-docker-app#api-de-chamados)
 
-</details>
-
-<details>
-<summary><strong>P-02 · REDES</strong> — MAC-Fabricante</summary>
-
-**Experimente** rodar a planilha fictícia duas vezes. Na segunda, o script reaproveita o cache de prefixos MAC/OUI já consultados.
-
-[Experimentar com a planilha fictícia ↗](https://github.com/Vitorhrm/MAC-Fabricante#experimentar-com-dados-fictícios)
+Java · Spring Boot · Testes HTTP · Dados em memória
 
 </details>
 
 <details>
-<summary><strong>P-03 · WEB</strong> — Conexões SI</summary>
+<summary><strong>🐍 Redes · Quem fabricou esse equipamento?</strong></summary>
 
-**Experimente** escolher uma profissão e abrir a lista de disciplinas na ordem dos semestres. Depois compare com outra carreira para ver quais matérias aparecem nas duas.
+Use a planilha fictícia para identificar fabricantes pelo prefixo MAC/OUI. Rode novamente e observe o cache evitando consultas repetidas.
 
-[Abrir demo ↗](https://vitorhrm.github.io/SADtrab/) · [Ver código ↗](https://github.com/Vitorhrm/SADtrab)
+[**Experimentar MAC-Fabricante →**](https://github.com/Vitorhrm/MAC-Fabricante)
 
-</details>
-
-<details>
-<summary><strong>P-04 · IoT</strong> — AgroSense · TCC em desenvolvimento</summary>
-
-**Explore** o fluxo de cadastro de dispositivos na documentação. A interface e a autenticação estão implementadas. Os dados agrícolas e a descoberta de dispositivos são demonstrativos. A integração de campo está em desenvolvimento.
-
-[Acompanhar o TCC ↗](https://github.com/Vitorhrm/Agrosense)
+Python · Excel · Consulta de fabricantes · Cache local
 
 </details>
 
 <details>
-<summary><strong>P-05 · MOBILE</strong> — Mordix</summary>
+<summary><strong>🧭 Web · Qual caminho seguir em Sistemas de Informação?</strong></summary>
 
-**Explore** como o protótipo Android separa a autenticação real pelo Supabase do catálogo, carrinho e frete demonstrativos.
+Escolha uma carreira, explore suas disciplinas por semestre e compare com outra profissão.
 
-[Ver configuração e testes ↗](https://github.com/Vitorhrm/Mordix#readme)
+[**Explorar a demo →**](https://vitorhrm.github.io/SADtrab/) · [Ver código](https://github.com/Vitorhrm/SADtrab)
+
+JavaScript · HTML · CSS · Dados do curso
 
 </details>
 
-## 02 / Bancada
+<details>
+<summary><strong>🌱 IoT · Do sensor à decisão de irrigação</strong></summary>
 
-[![Java CI — status do build e dos testes](https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml)
+O **AgroSense é meu TCC em desenvolvimento**. O aplicativo tem autenticação e telas com dados agrícolas demonstrativos. A integração das medições da estação e dos dados meteorológicos está em desenvolvimento.
 
-O badge acompanha o build e os testes da API de chamados no GitHub Actions. No AgroSense, a próxima etapa é integrar ao aplicativo as medições de campo.
+[**Acompanhar o AgroSense →**](https://github.com/Vitorhrm/Agrosense)
+
+React · TypeScript · Android · Protótipo de apoio à irrigação
+
+</details>
+
+<details>
+<summary><strong>📱 Mobile · Um delivery em versão de laboratório</strong></summary>
+
+No Mordix, explore a autenticação via Supabase e o fluxo de catálogo e carrinho com dados demonstrativos.
+
+[**Explorar Mordix →**](https://github.com/Vitorhrm/Mordix)
+
+React Native · TypeScript · Android · Protótipo acadêmico
+
+</details>
+
+<p align="center"><a href="https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml"><img src="https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml/badge.svg?branch=main" alt="Build e testes da API Java"></a></p>
+
+### Vamos conversar?
+
+[![LinkedIn](assets/linkedin.svg)](https://www.linkedin.com/in/vitor-hrm-matias/)
+[![Instagram](assets/instagram.svg)](https://www.instagram.com/vitcs1/)
+[![E-mail](assets/email.svg)](mailto:vitorhrm1@hotmail.com)
+
+### Intervalo para o arcade 👻
+
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/pacman-contribution-graph-dark.svg">
+<img src="assets/pacman-contribution-graph.svg" width="900" alt="Pac-Man animado percorrendo minhas contribuições no GitHub.">
+</picture>
+
+<details>
+<summary>Como estes cartões são atualizados?</summary>
+
+Uma rotina diária gera os cartões com dados da API pública do GitHub. As linguagens são medidas em bytes de código nos cinco projetos selecionados. Os ícones são do [Skill Icons](https://github.com/tandpfun/skill-icons). O arcade usa [Pacman Contribution Graph](https://github.com/abozanona/pacman-contribution-graph).
+
+</details>
