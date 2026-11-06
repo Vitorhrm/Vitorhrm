@@ -1,4 +1,4 @@
-name: Atualizar cartões do perfil
+name: Atualizar cartões e arcade
 
 on:
   schedule:
@@ -19,19 +19,26 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
       - name: Gerar cartões com dados públicos
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: python3 scripts/update_cards.py
-      - name: Publicar cartões atualizados
+      - name: Gerar Pac-Man com as contribuições
+        uses: abozanona/pacman-contribution-graph@294c47eff28a41339a279107ae771b5fa020037a
+        with:
+          github_user_name: Vitorhrm
+          games: pacman
+      - name: Publicar cartões e arcade
         run: |
+          cp dist/pacman-contribution-graph*.svg assets/
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/stats.svg assets/languages.svg
+          git add assets/stats.svg assets/languages.svg assets/pacman-contribution-graph*.svg
           if ! git diff --cached --quiet; then
-            git commit -m 'docs: atualiza dados públicos do perfil'
+            git commit -m 'docs: atualiza cartões e arcade do perfil'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
