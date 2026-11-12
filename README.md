@@ -1,86 +1,93 @@
-<div align="center">
-  <img src="assets/hello.gif" width="900" alt="Olá, eu sou o Vitor. Java e Spring Boot, redes e automação, TCC e IoT em desenvolvimento.">
-</div>
-
 # Vitor Matias
 
-**Backend Java · Automação de redes · Sistemas de Informação no IFMG**
+**Do suporte de redes ao desenvolvimento de software.**
 
-Minha experiência em suporte e infraestrutura de telecomunicações inspira meus projetos. Uso Java e Spring Boot para explorar fluxos de atendimento e Python para automatizar tarefas de rede. No IFMG, desenvolvo um TCC sobre apoio à irrigação.
+Estudo Sistemas de Informação no IFMG. Minha experiência em suporte e infraestrutura de telecomunicações orienta o que construo: APIs em Java, automações em Python e um protótipo de irrigação com sensores.
 
-[![Explorar API Java](assets/api.svg)](https://github.com/Vitorhrm/spring-docker-app#api-de-chamados)
-[![Abrir demo do Conexões SI](assets/demo.svg)](https://vitorhrm.github.io/SADtrab/)
-[![LinkedIn](assets/linkedin.svg)](https://www.linkedin.com/in/vitor-hrm-matias/)
+[**Ver projetos**](#projetos) · [Tecnologias](#tecnologias) · [Atividade](#atividade) · [Contato](#contato)
 
-## Projetos em destaque
+## Projetos
 
-### ☕ API de chamados de suporte
+### API de chamados de suporte
 
-API REST em **Java 17 e Spring Boot** com criação de chamados, regras de transição e histórico em memória. Os testes com MockMvc cobrem o fluxo HTTP, incluindo validação e transições inválidas.
+Modelei um fluxo de atendimento em **Java 17 e Spring Boot**. Cada mudança de status entra no histórico do chamado, e a API rejeita transições fora da sequência. Os testes com MockMvc cobrem o fluxo HTTP e os casos inválidos.
 
-[Ver API e exemplos](https://github.com/Vitorhrm/spring-docker-app#api-de-chamados) · [Executar com Docker](https://github.com/Vitorhrm/spring-docker-app#executar-com-docker) · [![Build e testes da API Java](https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml)
+[**Ver endpoints e exemplos**](https://github.com/Vitorhrm/spring-docker-app#api-de-chamados) · [Executar com Docker](https://github.com/Vitorhrm/spring-docker-app#executar-com-docker)
 
 <details>
-<summary>Experimente uma transição inválida</summary>
+<summary>Testar o que acontece quando um chamado pula uma etapa</summary>
 
-Crie um chamado e tente ir direto de `OPEN` para `RESOLVED`. A API deve retornar `409`. Em seguida, percorra `OPEN → IN_PROGRESS → RESOLVED` e confira o histórico.
+1. Crie um chamado com `POST /api/tickets`.
+2. Tente mudar de `OPEN` direto para `RESOLVED`. A API responde `409 Conflict`.
+3. Passe por `IN_PROGRESS` antes de resolver e consulte o chamado para conferir o histórico em memória.
+
+[Conferir build e testes no GitHub Actions](https://github.com/Vitorhrm/spring-docker-app/actions/workflows/ci.yml)
 
 </details>
 
-### 🌱 AgroSense · TCC em desenvolvimento
+### AgroSense
 
-Protótipo de apoio à irrigação com telemetria de uma estação **ESP32** e previsão do tempo por área. A validação das regras de recomendação de irrigação ainda está pendente.
+> [!NOTE]
+> **TCC em desenvolvimento.** A validação das recomendações de irrigação ainda está pendente.
 
-[Ver arquitetura e andamento](https://github.com/Vitorhrm/Agrosense#arquitetura) · [Abrir versão web](https://agrosense-app.vercel.app/agro/)
-
-<details>
-<summary>Como a leitura chega ao aplicativo?</summary>
+O protótipo reúne medições da estação e previsão do tempo por área. A estação envia as leituras por LoRa para um receptor ESP32, que as encaminha por HTTPS. O aplicativo web e Android exibe a telemetria.
 
 ```mermaid
 flowchart LR
-    A[Estação ESP32] -->|LoRa| B[Receptor ESP32]
+    accTitle: Caminho da telemetria do AgroSense
+    accDescr: A estação ESP32 transmite por LoRa ao receptor, que envia as leituras por HTTPS à API. O aplicativo exibe os dados armazenados.
+    A[Estação ESP32] -->|LoRa| B[Receptor]
     B -->|HTTPS| C[API e banco]
     C --> D[Web e Android]
 ```
 
-</details>
+[**Ver arquitetura e andamento**](https://github.com/Vitorhrm/Agrosense) · [Abrir versão web](https://agrosense-app.vercel.app/agro/)
 
-### 🐍 MAC-Fabricante
+### MAC-Fabricante
 
-Automação em **Python** que identifica fabricantes pelo prefixo MAC/OUI em planilhas Excel. O cache local reaproveita resultados de consultas anteriores.
+Uma automação em **Python** para identificar fabricantes de equipamentos a partir de endereços MAC em planilhas Excel. O script reaproveita as consultas por prefixo OUI com um cache local.
 
-[Testar com a planilha de exemplo](https://github.com/Vitorhrm/MAC-Fabricante#experimentar-com-dados-fict%C3%ADcios)
+[**Testar com dados fictícios**](https://github.com/Vitorhrm/MAC-Fabricante#experimentar-com-dados-fict%C3%ADcios)
 
-## Mais projetos
+### Outros projetos
 
-- **Conexões SI** · Mapa interativo para explorar disciplinas e comparar caminhos de carreira em Sistemas de Informação. [Abrir demo](https://vitorhrm.github.io/SADtrab/) · [Ver código](https://github.com/Vitorhrm/SADtrab)
-- **Mordix** · Protótipo acadêmico de delivery para Android com React Native, autenticação e catálogo demonstrativo. [Ver projeto](https://github.com/Vitorhrm/Mordix)
+- **Conexões SI** reúne disciplinas do IFMG Ouro Branco em um mapa interativo. Você pode comparar carreiras e ver quais matérias se relacionam com cada uma. [Abrir demo](https://vitorhrm.github.io/SADtrab/) · [Ver código](https://github.com/Vitorhrm/SADtrab)
+- **Mordix** é um protótipo acadêmico de delivery para Android, com autenticação e fluxo de catálogo e carrinho com dados demonstrativos. [Ver projeto](https://github.com/Vitorhrm/Mordix)
 
 ## Tecnologias
 
-<p><img src="assets/stack.svg" width="480" alt="Java, Spring, Python, TypeScript, React, Docker, Git e Linux."></p>
+- **Backend e testes:** Java, Spring Boot, MockMvc e Docker.
+- **Redes e automação:** Python, Linux, ESP32 e LoRa.
+- **Web e mobile:** TypeScript, React e React Native.
 
-## Atividade no GitHub
+## Atividade
 
 <details>
 <summary>Ver estatísticas e linguagens</summary>
 
-<p align="center">
-  <img src="assets/stats.svg" width="49%" alt="Números públicos do perfil, atualizados diariamente.">
-  <img src="assets/languages.svg" width="49%" alt="Distribuição por bytes de código em cinco projetos selecionados.">
+<p>
+  <img src="assets/stats.svg" width="49%" alt="Estatísticas públicas do perfil.">
+  <img src="assets/languages.svg" width="49%" alt="Distribuição de linguagens pelo volume de código em cinco projetos.">
 </p>
 
-Os cartões são atualizados diariamente com dados públicos do GitHub. O gráfico de linguagens usa o volume de código em cinco projetos selecionados.
+Os cartões são atualizados diariamente com dados públicos do GitHub.
 
 </details>
 
+<details>
+<summary>Abrir o arcade e o banner animado</summary>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/pacman-contribution-graph-dark.svg">
-  <img src="assets/pacman-contribution-graph.svg" width="900" alt="Pac-Man animado percorrendo minhas contribuições no GitHub.">
+  <img src="assets/pacman-contribution-graph.svg" width="900" alt="Pac-Man animado percorre meu calendário de contribuições no GitHub.">
 </picture>
+
+<img src="assets/hello.gif" width="900" alt="Banner animado de apresentação sobre Java, automação de redes e IoT.">
+
+<sub>Animação de <a href="https://github.com/abozanona/pacman-contribution-graph">Pacman Contribution Graph</a>.</sub>
+
+</details>
 
 ## Contato
 
 [LinkedIn](https://www.linkedin.com/in/vitor-hrm-matias/) · [E-mail](mailto:vitorhrm1@hotmail.com) · [Instagram](https://www.instagram.com/vitcs1/)
-
-<sub>Ícones de <a href="https://github.com/tandpfun/skill-icons">Skill Icons</a>. Animação de <a href="https://github.com/abozanona/pacman-contribution-graph">Pacman Contribution Graph</a>.</sub>
