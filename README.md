@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/hello.gif" width="900" alt="Banner animado de apresentação de Vitor Matias">
+</p>
+
 # Vitor Matias
 
 **Do suporte de redes ao desenvolvimento de software.**
@@ -62,6 +66,13 @@ Uma automação em **Python** para identificar fabricantes de equipamentos a par
 
 ## Atividade
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pacman-contribution-graph-dark.svg">
+  <img src="assets/pacman-contribution-graph.svg" width="900" alt="Pac-Man animado percorre meu calendário de contribuições no GitHub.">
+</picture>
+
+[Pac-Man no calendário de contribuições](https://github.com/abozanona/pacman-contribution-graph)
+
 <details>
 <summary>Ver estatísticas e linguagens</summary>
 
@@ -71,20 +82,6 @@ Uma automação em **Python** para identificar fabricantes de equipamentos a par
 </p>
 
 Os cartões são atualizados diariamente com dados públicos do GitHub.
-
-</details>
-
-<details>
-<summary>Abrir o arcade e o banner animado</summary>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/pacman-contribution-graph-dark.svg">
-  <img src="assets/pacman-contribution-graph.svg" width="900" alt="Pac-Man animado percorre meu calendário de contribuições no GitHub.">
-</picture>
-
-<img src="assets/hello.gif" width="900" alt="Banner animado de apresentação sobre Java, automação de redes e IoT.">
-
-<sub>Animação de <a href="https://github.com/abozanona/pacman-contribution-graph">Pacman Contribution Graph</a>.</sub>
 
 </details>
 
