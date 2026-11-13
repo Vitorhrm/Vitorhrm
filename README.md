@@ -20,7 +20,7 @@ Trago da experiência em suporte e infraestrutura o hábito de investigar proble
 <img src="assets/languages.svg" width="49%" alt="Distribuição por bytes de código em cinco projetos selecionados.">
 </div>
 
-### Na minha bancada
+### Tecnologias que uso
 
 <p align="center"><img src="assets/stack.svg" width="560" alt="Java, Spring, Python, TypeScript, React, Docker, Git e Linux."></p>
 
@@ -28,7 +28,7 @@ Trago da experiência em suporte e infraestrutura o hábito de investigar proble
 **Automação e infraestrutura** · Python, Docker, Git e Linux  
 **Interfaces dos protótipos** · React, TypeScript e React Native
 
-### Escolha uma missão ↓
+### Projetos em destaque
 
 <details open>
 <summary><strong>☕ Backend · O chamado que tentou pular a fila</strong></summary>
@@ -57,7 +57,7 @@ Python · Excel · Consulta de fabricantes · Cache local
 
 Escolha uma carreira, explore suas disciplinas por semestre e compare com outra profissão.
 
-[**Explorar a demo →**](https://vitorhrm.github.io/SADtrab/) · [Ver código](https://github.com/Vitorhrm/SADtrab)
+[**Explorar a demo →**](https://vitorhrm.github.io/SADtrab/) · [Ver código e dados](https://github.com/Vitorhrm/SADtrab#dados-e-critérios)
 
 JavaScript · HTML · CSS · Dados do curso
 
